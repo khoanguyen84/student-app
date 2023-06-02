@@ -9,5 +9,5 @@
 + 3 ngày
 
 ## Kết quả
-+ Link sản phẩm: 
-+ Link git
++ Link sản phẩm: https://khoanguyen84.github.io/student-app/
++ Link git: https://github.com/khoanguyen84/student-app.git
