@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container{
+    width: 900px;
+    margin: 0px auto;
+}
+
+.table{
+    width: 100%;
+}
+
+.table, .table tr, .table td, .table th{
+    border-collapse: collapse;
+}
+
+.thead th{
+    padding: 15px;
+    background-color: orange;
+    color: white;
+}
+
+.table-snippet>tbody>tr:nth-child(odd){
+    background-color: rgb(226, 214, 214);
+}
+
+.table-snippet>tbody>tr:hover{
+    background-color: rgb(148, 131, 131);
+    cursor: pointer;
+    color: white;
+    /* transform: scale(1.01); */
+}
+
+.avatar{
+    width: 60px;
+    border-radius: 50%;
+}

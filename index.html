@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="row">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Student Code</td>
+                        <td>
+                            <input type="text" id="student-code" value="CG00">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Fullname
+                        </td>
+                        <td>
+                            <input type="text" id="fullname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Avatar
+                        </td>
+                        <td>
+                            <input type="url" id="avatar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gender
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" checked> Male
+                            <input type="radio" name="gender"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Date of birth
+                        </td>
+                        <td>
+                            <input type="date" id="dob">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email
+                        </td>
+                        <td>
+                            <input type="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hobbies
+                        </td>
+                        <td>
+                            <input type="text" id="hobby">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button onclick="createStudent()">Create Student</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <input type="text" id="findStudentCode">
+            <button onclick="remove()">Remove Student By Student Code</button>
+        </div>
+        <div class="row">
+            <input type="text" id="keyword" oninput="search()">
+            <button onclick="search()">Search</button>
+        </div>
+        <div class="row">
+            <table class="table table-snippet">
+                <thead class="thead">
+                    <tr>
+                        <th>ID</th>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Avatar</th>
+                        <th>Gender</th>
+                        <th>Dob</th>
+                        <th>Email</th>
+                        <th>Hobbies</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbStudents">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="object.js"></script>
+</body>
+
+</html>
